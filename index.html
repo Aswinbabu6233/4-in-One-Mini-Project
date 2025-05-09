@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Mini Projects</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="nav-container">
+      <button class="nav-btn active" data-project="calculator">
+        Calculator
+      </button>
+      <button class="nav-btn" data-project="bmi">BMI Calculator</button>
+      <button class="nav-btn" data-project="lottery">Lottery Picker</button>
+      <button class="nav-btn" data-project="color">Color Game</button>
+    </nav>
+
+    <main>
+      <!-- Calculator Project -->
+      <section id="calculator" class="project-section active">
+        <div class="calculator">
+          <div class="display">0</div>
+          <div class="buttons">
+            <button class="btn operator">AC</button>
+            <button class="btn operator">±</button>
+            <button class="btn operator">%</button>
+            <button class="btn operator">÷</button>
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn operator">×</button>
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn operator">-</button>
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn operator">+</button>
+            <button class="btn span-2">0</button>
+            <button class="btn">.</button>
+            <button class="btn operator">=</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- BMI Calculator -->
+      <section id="bmi" class="project-section">
+        <div class="bmi-calculator">
+          <h2>BMI Calculator</h2>
+          <input type="number" id="weight" placeholder="Weight (kg)" />
+          <input type="number" id="height" placeholder="Height (cm)" />
+          <button class="calculate-btn">Calculate BMI</button>
+          <div class="result"></div>
+        </div>
+      </section>
+
+      <!-- Lottery Picker -->
+      <section id="lottery" class="project-section">
+        <div class="lottery-picker">
+          <h2>Kerala Lottery System</h2>
+          <div class="input-group">
+            <input type="text" id="participant-name" placeholder="Enter name" />
+            <button class="add-btn">Generate Ticket</button>
+          </div>
+          <button class="pick-btn">Draw Winner</button>
+          <div class="tickets-list">
+            <h3>Registered Tickets</h3>
+            <div class="tickets-container"></div>
+          </div>
+          <div class="winner-section">
+            <h3>Winning Ticket</h3>
+            <div class="winner"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Color Game -->
+      <section id="color" class="project-section">
+        <div class="color-game">
+          <h2>Color Match Game</h2>
+          <div class="color-display"></div>
+          <div class="color-options"></div>
+          <div class="result"></div>
+          <button class="reset-btn">New Colors</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
